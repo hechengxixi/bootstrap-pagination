@@ -29,7 +29,7 @@
 		autoLoad:true,
 		data: null,
 		url: '',
-		dataField: 'data',
+		dataField: '',
 		totalCountField: 'totalCount',
 		totalPagesField: 'totalPages',
 		currentPage: 1,
@@ -108,10 +108,10 @@
 		this.bindEvent()
 		//获取数据
 		if(this.autoLoad){
-			if (this.data) {
-				this.loadData(this.data)
-			} else {
+			if (this.url) {
 				this.load()
+			} else {
+				this.loadData(this.data || {})
 			}
 		}
 	}
