@@ -8,7 +8,7 @@ this is a pager plugin that is based on bootstrap's pagination
     4.listen remote load event and data load event
 
 ## API
-    ### configuration
+### configuration
         pageSize: [Number], default 1
         serverPagination:[Boolean], default false
         autoLoad:[Boolean], default true
@@ -19,14 +19,14 @@ this is a pager plugin that is based on bootstrap's pagination
         totalPagesField: [String], default 'totalPages',which field totalPages is in data selection;this is not required
         displayNumber: [Number], default 5, how many page is displayed in the pager
 
-    ### method
+### method
         load:params[option, isFireLoadEvent]
         loadData:params[data]
         loadPage:params[page]
         updatePagersView
         destroy
 
-    ### event
+### event
         'loadSuccess.bs.pagination'
         'loadError.bs.pagination'
         'loadDataEnd.bs.pagination'
